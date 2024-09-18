@@ -1,0 +1,376 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #141414;
+    overflow-x: hidden; 
+}
+
+/* Header Section */
+header {
+    position: relative;
+    background-image: url('netflix-background-246844-2224648-4918717.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%; 
+    padding: 0 20px; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-container {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.sign-in-btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border-radius: 1px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero-section {
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.email-form {
+    margin-top: 20px;
+}
+
+.email-form input[type="email"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 70%;
+    max-width: 300px;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trending Section */
+.trending-section {
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    min-width: 250px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.badge {
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Reasons Section */
+.reasons-section {
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reasons-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reasons-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reason-card {
+    background: linear-gradient(145deg, #1a1a2e, #4e4e93);
+    border-radius: 15px;
+    padding: 30px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: scale(1.05);
+}
+
+.reason-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.reason-card p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.reason-card img {
+    width: 50px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 50px 20px;
+    background-color: #141414;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #444;
+}
+
+.arrow-icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+[aria-expanded="true"] .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: #444;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.email-form-footer input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.get-started-btn-footer {
+    background-color: #e50914;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .carousel {
+        max-width: 960px;
+    }
+    .card {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel {
+        max-width: 640px;
+    }
+    .card {
+        min-width: 300px;
+    }
+
+    .reason-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .carousel {
+        max-width: 320px;
+    }
+    .card {
+        min-width: 280px;
+    }
+
+    .reason-card {
+        width: 100%;
+    }
+
+    .email-form input[type="email"],
+    .email-form-footer input {
+        width: 100%;
+        max-width: none;
+    }
+}
