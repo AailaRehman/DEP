@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="overlay"></div>
+        <div class="header-container">
+            <img src="netflix-logo.png" alt="Netflix Logo" class="logo">
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+        <div class="hero-section">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <h2>Starts at Rs 250. Cancel anytime.</h2>
+            <div class="email-form">
+                <input type="email" placeholder="Email address" aria-label="Email address" id="email-input">
+                <button class="get-started-btn">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trending Now Section (Slider) -->
+    <section class="trending-section">
+        <h2>Trending Now</h2>
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZCcdQEZA2ddPT5rBvxg65dr802Qa5eJVmEo4SEUWgIVP5Js8a_0kyTIyg1bu443MzPPipqVMXVuwjI608XYuwnfbt1HobsYubNE6eTtg1yj5bIq9-bfRrblSBEHoYsrzzn3Rtha_1-8A2s1hitlv7JL1L2XAYH8Blg2vKrMQOmV0ijsTM5bEiLjcyDAZeo.jpg?r=878" alt="Sector 36"><div class="card-info"><span class="number">1</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa_zG7wlW6_cCCIMLRRKTJfI7GfKHhYEk5wfQ0YgKHKIXEzrXQgPUg-ES5sQZivZISWDdAeENmtzYo3QL_K8vC_Q94qO3Rlcbd4.jpg?r=033" alt="Laapata Ladies"><div class="card-info"><span class="number">2</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABetoGk0CLIkPxKr6MMuFswl25hF_gsw1TIvJakiPx32KBAPxk4wVqHDMPX2vPjBXdHr45GtWlm7ARQUlBfkMhQZ6v1akZbdncW8.jpg?r=cfe" alt="Jawan"><div class="card-info"><span class="number">3</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXFUxr1IUzyqjaxRbXmbT94XQEc6VHrtMV2ItqxAVr3O1BfPnsz0jusIHU9XY4HtxFPdhNKcIxvHZJt_9jrK65miC-c_cIb10cI3S0Fz4yzTWRfjcnAMsbdyu7aQZyxyI6K1xGMF3jdWfGLI757ROffVcgJkFiZ3JkY.jpg?r=fe7" alt="Fast and Furious"><div class="card-info"><span class="number">4</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUAlmblmFnKzX7qUhYjF2HV8kCgtMoHxT1opWdKsz9IN6IaImBDgRnFIQ5DSCQoNBGLtYVtzNQabPKpR9AbM68xpDXkk_Hn_JRw.jpg?r=b04" alt="Gemini Man"><div class="card-info"><span class="number">5</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTeKlojl0f9oSOGYhWoJMYTtgWPik_HHpzkpXUflMCZW3TwS7w576QRYuxGnVkGVeQJm-BpJ0wI5neerl0igPq88mBhogXz7zvI.jpg?r=858" alt="Thanks Giving"><div class="card-info"><span class="number">6</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXPTtOgWR5lvdynrqUQ0Hdew8ZE3EdZq99rYf0ldz0Qn3Lj4yfN9RY866CJ1lp-EN3_2HbVO27ntyuW_PgNpF3IS06gJdtkUS4I.jpg?r=f75" alt="Shaitaan"><div class="card-info"><span class="number">7</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVonyw0Ni8Ozu689Kryun_ulQIWovWMgisVwwWiXfA4AYOHViw4g2a1OdDSPx7E7bL49pOge9lC2JN8EUOrgvGx7wA2lSKdjxLk.jpg?r=1fc" alt="Savi"><div class="card-info"><span class="number">8</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfF6DDP9H0k3knc4_Uh2-SECtSrqoG6SQmvrWAmf12GWPRHP--iiQclbKu6xhsdzYz4_BTBj7g3LJWlcOK7P-3AUUNgdeerNUfk.jpg?r=e65" alt="Dunki"><div class="card-info"><span class="number">9</span><span class="badge">Recently Added</span></div></div>
+                    <div class="card"><img src="https://occ-0-7649-64.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABR96Plv2Udj51uGrlaFh1EdWKTM0WnAO0Ic0f7LuAEC9gi8pQh3Em2FXAKmJvJujUGBTMuaNNT_Hvs7RzvhPAx59DM0WIJZNSCg.jpg?r=855" alt="Venom"><div class="card-info"><span class="number">10</span><span class="badge">Recently Added</span></div></div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="reasons-section">
+        <h2>More Reasons to Join</h2>
+        <div class="reasons-container">
+            <div class="reason-card">
+                <h3>Enjoy on your TV</h3>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <img src="smart-tv.png" alt="TV icon">
+            </div>
+            <div class="reason-card">
+                <h3>Download your shows to watch offline</h3>
+                <p>Save your favorites easily and always have something to watch.</p>
+                <img src="download.png" alt="Download icon">
+            </div>
+            <div class="reason-card">
+                <h3>Watch everywhere</h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <img src="world.png" alt="Everywhere icon">
+            </div>
+            <div class="reason-card">
+                <h3>Create profiles for kids</h3>
+                <p>Send kids on adventures with their favorite characters in a space made just for them.</p>
+                <img src="boy.png" alt="Kids icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Accordion) -->
+    <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                What is Netflix?
+                <span class="arrow-icon">&#9660;</span> 
+            </button>
+            <div id="faq1" class="faq-answer">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.</p>
+            </div>
+    
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                How much does Netflix cost?
+                <span class="arrow-icon">&#9660;</span> 
+            </button>
+            <div id="faq2" class="faq-answer">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs250 to Rs1100 a month.</p>
+            </div>
+    
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                Where can I watch?
+                <span class="arrow-icon">&#9660;</span> 
+            </button>
+            <div id="faq3" class="faq-answer">
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device.</p>
+            </div>
+    
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                How do I cancel?
+                <span class="arrow-icon">&#9660;</span> 
+            </button>
+            <div id="faq4" class="faq-answer">
+                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Help Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="email-form-footer">
+                <input type="email" placeholder="Email address" id="footer-email-input">
+                <button class="get-started-btn-footer">Get Started</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
