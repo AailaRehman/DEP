@@ -1,0 +1,526 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f4f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #533d32;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body, html {
+font-family: 'Arial', sans-serif;
+background-color: #f5f5f5;
+}
+
+header {
+background-color: transparent;
+padding: 20px 0;
+position: relative;
+}
+
+/* Navbar Styling */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #3B2311; 
+border-radius: 50px;
+padding: 10px 30px;
+width:92% ;
+margin-left: 50px;
+position: relative;
+z-index: 2;
+}
+
+/* Center Logo Styling */
+.logo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+border: 6px solid #3B2311;
+border-radius: 50%;
+width: 100px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo img {
+width: 60px;
+height: 60px;
+}
+
+.text-menu {
+list-style: none;
+display: flex;
+gap: 130px;
+}
+
+.text-menu li {
+display: inline-block;
+}
+
+.text-menu a {
+text-decoration: none;
+color: white;
+font-size: 18px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+padding: 8px 15px;
+transition: color 0.3s ease;
+}
+
+.text-menu a:hover {
+color: #FFC085;
+}
+
+.icons {
+list-style: none;
+display: flex;
+gap: 15px;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.icons img {
+width: 20px;
+height: 20px;
+}
+
+.icons li {
+display: inline-block;
+}
+
+.icons a {
+text-decoration: none;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f8f4f0;
+}
+
+.welcome h2 {
+  font-size: 2.5rem;
+  color: #533d32;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #5a514e;
+  line-height: 1.8;
+}
+
+/* Footer Section */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #1A1A1A;
+  padding: 0;
+  color: #F5E2CC;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align-items: stretch;
+}
+
+.footer-item img.grid {
+  width: 100%;
+  object-fit: cover;
+  height: 320px;
+  padding: 0; 
+  margin: 0; 
+}
+
+.footer-item h3, .footer-item p {
+  margin: 0;
+}
+
+.footer-item .text-content {
+  height: 320px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer headings styling */
+.footer-item h3 {
+  font-size: 1.5rem;
+  color: #FFC085;
+  margin-bottom: 10px;
+}
+
+/* Footer paragraph styling */
+.footer-item p {
+  font-size: 1rem;
+  color: #F5E2CC;
+}
+
+/* Social media icons */
+.social-links a {
+  margin: 0 10px;
+  color: #F5E2CC;
+}
+
+
+.newsletter {
+  background-image: url(newsletter.png);
+  padding: 20px;
+  height:300px;
+}
+
+.newsletter p {
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.newsletter button {
+  padding: 15px 20px;
+  font-size: 1rem;
+  background-color: #1A1A1A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #0e0e0e;
+}
+
+.footer-bottom {
+  padding: 10px;
+  background-color: #1A1A1A;
+  margin-bottom: 0 ;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #b97d56;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fefefe;
+}
+
+.about-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #5a3d2b;
+  margin-bottom: 50px;
+}
+
+.about-item {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  align-items: center;
+  margin-left: 170px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #f8f4f0;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color: #5a3d2b;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #533d32;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 90%;
+  border-radius: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  color: #533d32;
+  margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: 1A1A1A;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #b97d56;
+}
+
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f8f4f0;
+  color: #5b3920;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  text-align: center;
+  padding: 50px 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-title {
+  font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #5a3d2b;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 350px;
+}
+
+.menu-section {
+  text-align: left;
+  max-width: 300px;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* Blog Post Styles */
+.blog{
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.blog h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #5a3d2b;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+.blog-grid {
+  display: flex;
+  justify-content: center;  
+  align-items: stretch;     
+  gap: 20px;               
+  width: 320px;             
+  margin: 0 auto;          
+}
+
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+}
+
+.blog-post h3 {
+  color: #533d32;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.blog-post p {
+  color: #5a514e;
+}
+
+/* Animations */
+.menu-item, .blog-post, .contact-form {
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
